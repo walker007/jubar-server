@@ -1,2 +1,2 @@
-web: node ace server
-release: node ace migration:run --force
+web: ENV_SILENT=true node ace server
+release: ENV_SILENT=true node ace migration:run --force
