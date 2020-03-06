@@ -20,6 +20,8 @@ Route.post("/authenticate", "AuthController.authenticate");
 Route.get("getPostPicture/:filename", "MediaController.showPostPicture");
 Route.get("/getuserinfo", "AuthController.getUser");
 
+Route.post("/user/create", "UserController.store");
+
 Route.group(() => {
     Route.resource("posts", "PostController")
         .apiOnly()
